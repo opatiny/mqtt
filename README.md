@@ -1,4 +1,4 @@
-# mqtt
+# test-mqtt
 
 Sends and receives messages from an MQTT brocker.
 

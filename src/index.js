@@ -1,13 +1,10 @@
 'use strict';
 
-/**
- * Returns a very important number
- * @return {number}
- */
-function myCommonJS() {
-  return 42;
-}
+const mqtt = require('mqtt');
 
-module.exports = {
-  myCommonJS,
-};
+const server = 'mqtt://localhost:1883';
+const topic = 'chat/nodejs';
+
+const client = mqtt.connect(server);
+
+return 42;

@@ -1,15 +1,14 @@
 {
-  "name": "mqtt",
+  "name": "test-mqtt",
   "version": "0.0.0",
   "description": "",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "mqtt": "^4.0.1"
+  },
   "scripts": {
     "eslint": "eslint src --ext js,jsx",
-    "eslint-fix": "npm run eslint -- --fix",
-    "test": "npm run test-coverage && npm run eslint",
-    "test-coverage": "jest --coverage",
-    "test-only": "jest"
+    "eslint-fix": "npm run eslint -- --fix"
   },
   "eslintConfig": {
     "extends": "cheminfo-react",
@@ -20,26 +19,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opatiny/mqtt.git"
+    "url": "git+https://github.com/opatiny/test-mqtt.git"
   },
   "keywords": [],
   "author": "Océane Patiny",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/opatiny/mqtt/issues"
+    "url": "https://github.com/opatiny/test-mqtt/issues"
   },
-  "homepage": "https://github.com/opatiny/mqtt#readme",
+  "homepage": "https://github.com/opatiny/test-mqtt#readme",
   "jest": {
     "testEnvironment": "node"
   },
   "devDependencies": {
-    "@types/jest": "^25.2.2",
     "eslint": "^7.0.0",
     "eslint-config-cheminfo": "^3.0.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jest": "^23.11.0",
     "eslint-plugin-prettier": "^3.1.3",
-    "jest": "^26.0.1",
     "prettier": "^2.0.5"
   }
 }
