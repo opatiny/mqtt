@@ -14,7 +14,9 @@ const user1 = process.argv[2];
 const user2 = process.argv[3];
 const pubTopic = `chat/${process.argv[2]}`;
 const subTopic = `chat/${process.argv[3]}`;
-const broker = `mqtt://${process.argv[4]}` || 'mqtt://localhost:1883';
+let broker = process.argv[4] || 'localhost:1883';
+
+broker = `mqtt://${broker}`;
 
 // console.log(pubTopic, subTopic, broker);
 
@@ -31,10 +33,8 @@ client.on('connect', () => {
 rl.on('line', (input) => {
   let line = input.toString();
   if (line.length === 0) {
-    rl.question(chalk.blue(`${user1}: `), (message) => {
-      if (message.length > 0) {
-        client.publish(pubTopic, message);
-      }
+    rl.question(chalk.green(`${user1}: `), (message) => {
+      client.publish(pubTopic, message);
     });
   }
 });

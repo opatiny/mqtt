@@ -1,5 +1,5 @@
 {
-  "name": "test-mqtt",
+  "name": "mqtt-chat",
   "version": "0.0.0",
   "description": "",
   "private": true,
@@ -20,15 +20,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opatiny/test-mqtt.git"
+    "url": "git+https://github.com/opatiny/mqtt-chat.git"
   },
   "keywords": [],
   "author": "Océane Patiny",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/opatiny/test-mqtt/issues"
+    "url": "https://github.com/opatiny/mqtt-chat/issues"
   },
-  "homepage": "https://github.com/opatiny/test-mqtt#readme",
+  "homepage": "https://github.com/opatiny/mqtt-chat#readme",
   "jest": {
     "testEnvironment": "node"
   },
