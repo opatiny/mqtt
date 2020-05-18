@@ -3,7 +3,8 @@
 Allows you to chat between two terminals using MQTT
 
 ## Usage
-To use this project, you must have access to a running MQTT broker. Clone the project and enter the directory.
+
+To use this project, you must have access to a running MQTT broker (click [here](https://github.com/opatiny/chemexper-internship-workbook/blob/master/variousIT/mqtt/mqtt.md) for MQTT doc). Clone the project and enter the directory.
 
 This project uses three command line arguments: your username, the username of the other person you want to talk with, and optionally, the broker address.
 
